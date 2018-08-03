@@ -1,0 +1,80 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Playa Alta</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3101020-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</head>
+	<body class="loading">
+        <div id="burger">
+            <i></i>
+        </div>
+
+        <header id="menu" class='header_principal'>
+            <nav>
+                <a href="#home"><h1>Jesús Mendoza</h1></a>
+
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="livestream.html">Livestream</a></li>
+                    <li><a href="fotos.html">Foto Stream</a></li>
+                    <li><a href="menu.html">Menú</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+		<div id="wrapper">
+			<div id="fotos">
+				<div class="container">
+					<h1>Nuestras Fotos</h1>
+					<h3>Fotos del Chiringuito Playa Alta</h3>
+
+					<!--iframe id="facebook-fotos" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fchiringuito.playa.alta%2F&tabs=timeline&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=161981977199793" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe-->
+					<iframe  src="//embedsocial.com/facebook_album/album_photos/120839114616379" width="900" height="1500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+				</div>
+			</div>
+		</div>
+
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script>
+			$('document').ready(function() {
+				window.onload = function() { document.body.className = ''; }
+				window.ontouchmove = function() { return false; }
+				window.onorientationchange = function() { document.body.scrollTop = 0; }
+			});
+
+			$(function() {
+				$('a[href*="#"]:not([href="#"])').click(function() {
+					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+						var target = $(this.hash);
+						target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
+						if (target.length) {
+							$('html, body').animate({
+								scrollTop: target.offset().top
+							}, 1000);
+							return false;
+						}
+					}
+				});
+			});
+		</script>
+        <script src="assets/js/menu.js"></script>
+	</body>
+</html>

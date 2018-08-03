@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Playa Alta</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-3101020-3', 'auto');
+  ga('send', 'pageview');
+
+</script>
+	</head>
+	<body class="loading">
+        <div id="burger">
+            <i></i>
+        </div>
+
+        <header id="menu" class='header_principal'>
+            <nav>
+                <a href="#home"><h1>Jesús Mendoza</h1></a>
+
+                <ul>
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="livestream.html">Livestream</a></li>
+                    <li><a href="fotos.html">Foto Stream</a></li>
+                    <li><a href="menu.html">Menú</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                </ul>
+            </nav>
+        </header>
+
+		<div id="wrapper">
+            <div id="livestream-container">
+				<div class="container">
+					<h1>Transmisión en Directo</h1>
+					<h3>Playa Alta en Directo</h3>
+
+    				<img alt="http://ft9310.myfoscam.org:1201/cgi-bin/CGIStream.cgi?cmd=GetMJStream&amp;usr=web&amp;pwd=dog22tea" height="350" src="http://ft9310.myfoscam.org:1201/cgi-bin/CGIStream.cgi?cmd=GetMJStream&amp;usr=web&amp;pwd=dog22tea" width="620" style="padding:1px;
+   border:1px solid #021a40"/>
+				</div>
+			</div>
+		</div>
+
+		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script>
+			$('document').ready(function() {
+				var elemento = $('#livestream');
+				window.onload = function() { document.body.className = ''; }
+				window.ontouchmove = function() {  }
+				window.onorientationchange = function() { document.body.scrollTop = 0; }
+			});
+
+			$(function() {
+				$('a[href*="#"]:not([href="#"])').click(function() {
+					if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+						var target = $(this.hash);
+						target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
+						if (target.length) {
+							$('html, body').animate({
+								scrollTop: target.offset().top
+							}, 1000);
+							return false;
+						}
+					}
+				});
+			});
+		</script>
+        <script src="assets/js/menu.js"></script>
+	</body>
+</html>
