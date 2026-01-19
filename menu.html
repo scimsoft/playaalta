@@ -1,9 +1,82 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Playa Alta</title>
+		<title>Menú - Chiringuito Playa Alta | Comida Fresca en la Playa</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="Descubre el delicioso menú del Chiringuito Playa Alta. Platos frescos de marisco, pescado y cocina mediterránea en primera línea de playa." />
+		<meta name="keywords" content="menú, chiringuito, playa alta, marisco, pescado, comida de playa, restaurante playa, cocina mediterránea" />
+		
+		<!-- Open Graph / Facebook -->
+		<meta property="og:type" content="website" />
+		<meta property="og:title" content="Menú - Chiringuito Playa Alta" />
+		<meta property="og:description" content="Deliciosos platos de marisco, pescado y cocina mediterránea en primera línea de playa." />
+		<meta property="og:url" content="https://chiringuitoplayalta.com/menu.html" />
+		
+		<!-- Twitter Card -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Menú - Chiringuito Playa Alta" />
+		<meta name="twitter:description" content="Deliciosos platos de marisco, pescado y cocina mediterránea en primera línea de playa." />
+		
+		<!-- JSON-LD Schema Markup -->
+		<script type="application/ld+json">
+		{
+		  "@context": "https://schema.org",
+		  "@type": "Restaurant",
+		  "name": "Chiringuito Playa Alta",
+		  "description": "Restaurante de playa con deliciosos platos de marisco, pescado y cocina mediterránea",
+		  "menu": [
+			{
+			  "@type": "MenuSection",
+			  "name": "Entrantes",
+			  "hasMenuItem": [
+				{
+				  "@type": "MenuItem",
+				  "name": "Gambas al ajillo",
+				  "description": "Gambas frescas cocidas en aceite de oliva virgen extra con ajo y perejil",
+				  "offers": {
+					"@type": "Offer",
+					"price": "12€"
+				  }
+				},
+				{
+				  "@type": "MenuItem",
+				  "name": "Ensalada de chipirones",
+				  "description": "Chipirones a la plancha con lechuga, tomate, cebolla y vinagreta",
+				  "offers": {
+					"@type": "Offer",
+					"price": "10€"
+				  }
+				}
+			  ]
+			},
+			{
+			  "@type": "MenuSection",
+			  "name": "Pescados",
+			  "hasMenuItem": [
+				{
+				  "@type": "MenuItem",
+				  "name": "Dorada a la sal",
+				  "description": "Dorada fresca enteramente cocida a la sal marina",
+				  "offers": {
+					"@type": "Offer",
+					"price": "22€"
+				  }
+				},
+				{
+				  "@type": "MenuItem",
+				  "name": "Boquerones en vinagre",
+				  "description": "Boquerones frescos aliñados con cebolla, pimiento y vinagre de Jerez",
+				  "offers": {
+					"@type": "Offer",
+					"price": "8€"
+				  }
+				}
+			  ]
+			}
+		  ]
+		}
+		</script>
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
@@ -43,46 +116,126 @@
             </header>
 
 			<div id="restorant-menu">
-                <h1>Nuestro menú</h1>
+                <h1 itemprop="name">Nuestro Menú</h1>
+				<p class="lead">Disfruta de los mejores platos elaborados con ingredientes frescos del día</p>
 
-                <div class="container row">
-                    <div class="col-sm-6" data-toggle="modal" data-target="#menu1">
-                        <img src="assets/css/images/carta1.jpg" alt="menu1" class="img-thumbnail" />
-                    </div>
-                    <div class="col-sm-6" data-toggle="modal" data-target="#menu2">
-                        <img src="assets/css/images/carta2.jpg" alt="menu2" class="img-thumbnail" />
-                    </div>
-                </div>
-                <div class="bg">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-6">
+							<h2>Mariscos y Pescados</h2>
+							<article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
+								<h3 itemprop="name">Gambas al ajillo</h3>
+								<p itemprop="description">Gambas frescas cocidas en aceite de oliva virgen extra con ajo y perejil</p>
+								<span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+									<span itemprop="price">12€</span>
+								</span>
+							</article>
+							
+							<article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
+								<h3 itemprop="name">Dorada a la sal</h3>
+								<p itemprop="description">Dorada fresca enteramente cocida a la sal marina</p>
+								<span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+									<span itemprop="price">22€</span>
+								</span>
+							</article>
+							
+							<article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
+								<h3 itemprop="name">Boquerones en vinagre</h3>
+								<p itemprop="description">Boquerones frescos aliñados con cebolla, pimiento y vinagre de Jerez</p>
+								<span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+									<span itemprop="price">8€</span>
+								</span>
+							</article>
+						</div>
+						
+						<div class="col-md-6">
+							<h2>Platos Principales</h2>
+							<article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
+								<h3 itemprop="name">Ensalada de chipirones</h3>
+								<p itemprop="description">Chipirones a la plancha con lechuga, tomate, cebolla y vinagreta</p>
+								<span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+									<span itemprop="price">10€</span>
+								</span>
+							</article>
+							
+							<article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
+								<h3 itemprop="name">Paella de marisco</h3>
+								<p itemprop="description">Arroz con bogavante, nécoras, langostinos y calamares</p>
+								<span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+									<span itemprop="price">26€</span>
+								</span>
+							</article>
+							
+							<article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
+								<h3 itemprop="name">Hamburguesa de pulpo</h3>
+								<p itemprop="description">Pulpo a la brasa con mayonesa de pimentón y patatas fritas</p>
+								<span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+									<span itemprop="price">14€</span>
+								</span>
+							</article>
+						</div>
+					</div>
+					
+					<div class="row">
+						<div class="col-md-12">
+							<h2>Bebidas</h2>
+							<div class="row">
+								<div class="col-md-6">
+									<article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
+										<h3 itemprop="name">Vino blanco D.O. Rías Baixas</h3>
+										<p itemprop="description">Copas de Albariño o Ribeiro</p>
+										<span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+											<span itemprop="price">3€</span>
+										</span>
+									</article>
+									
+									<article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
+										<h3 itemprop="name">Cerveza artesanal local</h3>
+										<p itemprop="description">Cerveza rubia o roja elaborada en Galicia</p>
+										<span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+											<span itemprop="price">2.50€</span>
+										</span>
+									</article>
+								</div>
+								
+								<div class="col-md-6">
+									<article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
+										<h3 itemprop="name">Sangría casera</h3>
+										<p itemprop="description">Vino tinto con frutas de temporada</p>
+										<span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+											<span itemprop="price">4€</span>
+										</span>
+									</article>
+									
+									<article class="menu-item" itemscope itemtype="https://schema.org/MenuItem">
+										<h3 itemprop="name">Refrescos</h3>
+										<p itemprop="description">Cocacola, Fanta, Aquarius, etc.</p>
+										<span class="price" itemprop="offers" itemscope itemtype="https://schema.org/Offer">
+											<span itemprop="price">2.20€</span>
+										</span>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				
+				<!-- Keep the images as visual elements but make them accessible -->
+				<div class="container row mt-5">
+					<div class="col-sm-6">
+						<img src="assets/css/images/carta1.jpg" alt="Carta de entrantes y pescados del Chiringuito Playa Alta" class="img-thumbnail img-responsive" />
+					</div>
+					<div class="col-sm-6">
+						<img src="assets/css/images/carta2.jpg" alt="Carta de platos principales y bebidas del Chiringuito Playa Alta" class="img-thumbnail img-responsive" />
+					</div>
+				</div>
+				
+				<div class="bg">
                 </div>
             </div>
 		</div>
 
-        <div id="menu1" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="menu1" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <img src="assets/css/images/carta1.jpg" class="img-responsive">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 
-        <div id="menu2" class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="menu1" aria-hidden="true">
-            <div class="modal-dialog modal-lg">
-                <div class="modal-content">
-                    <div class="modal-body">
-                        <img src="assets/css/images/carta2.jpg" class="img-responsive">
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-                    </div>
-                </div>
-            </div>
-        </div>
 		<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 		<script>
 			$('document').ready(function() {
