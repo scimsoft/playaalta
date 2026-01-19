@@ -1,9 +1,29 @@
 <!DOCTYPE HTML>
 <html>
 	<head>
-		<title>Playa Alta</title>
+		<title>Photo Gallery - Chiringuito Playa Alta | Isla Canela Beach Photos</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="description" content="View our photo gallery showcasing Chiringuito Playa Alta beach restaurant in Isla Canela. See our delicious food, beautiful beach views, and vibrant atmosphere." />
+		<meta name="keywords" content="chiringuito playa alta photos, beach restaurant photos, isla canela images, seafood restaurant pictures, beach club gallery" />
+		<meta name="author" content="Chiringuito Playa Alta" />
+		<meta name="robots" content="index, follow" />
+		
+		<!-- Open Graph / Social Media Meta Tags -->
+		<meta property="og:title" content="Photo Gallery - Chiringuito Playa Alta | Isla Canela Beach Photos" />
+		<meta property="og:description" content="View our photo gallery showcasing Chiringuito Playa Alta beach restaurant in Isla Canela. See our delicious food, beautiful beach views, and vibrant atmosphere." />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://www.playaalta.es/fotos.html" />
+		<meta property="og:image" content="https://www.playaalta.es/assets/images/gallery-preview.jpg" />
+		
+		<!-- Twitter Card Meta Tags -->
+		<meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:title" content="Photo Gallery - Chiringuito Playa Alta | Isla Canela Beach Photos" />
+		<meta name="twitter:description" content="View our photo gallery showcasing Chiringuito Playa Alta beach restaurant in Isla Canela. See our delicious food, beautiful beach views, and vibrant atmosphere." />
+		
+		<!-- Canonical URL -->
+		<link rel="canonical" href="https://www.playaalta.es/fotos.html" />
+		
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
@@ -25,16 +45,16 @@
             <i></i>
         </div>
 
-        <header id="menu" class='header_principal'>
-            <nav>
-                <a href="#home"><h1>Jesús Mendoza</h1></a>
+        <header id="menu" class='header_principal' role="banner">
+            <nav role="navigation" aria-label="Main navigation">
+                <a href="index.html" title="Chiringuito Playa Alta Home"><h1>Chiringuito Playa Alta</h1></a>
 
                 <ul>
-                    <li><a href="index.html">Inicio</a></li>
-                    <li><a href="livestream.html">Livestream</a></li>
-                    <li><a href="fotos.html">Foto Stream</a></li>
-                    <li><a href="menu.html">Menú</a></li>
-                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="index.html" title="Home">Inicio</a></li>
+                    <li><a href="livestream.html" title="Watch our beach live stream">Livestream</a></li>
+                    <li><a href="fotos.html" title="View our photo gallery">Foto Stream</a></li>
+                    <li><a href="menu.html" title="Browse our menu">Menú</a></li>
+                    <li><a href="contacto.html" title="Contact us">Contacto</a></li>
                 </ul>
             </nav>
         </header>
@@ -42,11 +62,17 @@
 		<div id="wrapper">
 			<div id="fotos">
 				<div class="container">
-					<h1>Nuestras Fotos</h1>
-					<h3>Fotos del Chiringuito Playa Alta</h3>
-
-					<!--iframe id="facebook-fotos" src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2Fchiringuito.playa.alta%2F&tabs=timeline&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=161981977199793" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe-->
-					<iframe  src="//embedsocial.com/facebook_album/album_photos/120839114616379" width="900" height="1500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+					<main role="main">
+						<section aria-labelledby="gallery-heading">
+							<h1 id="gallery-heading">Our Photo Gallery</h1>
+							<h2>Discover Chiringuito Playa Alta</h2>
+							<p>Explore our beautiful beach restaurant through our photo gallery. Experience the stunning ocean views, delicious cuisine, and vibrant atmosphere that await you at our beach club in Isla Canela.</p>
+							
+							<div class="gallery-embed" aria-label="Photo gallery">
+								<iframe src="//embedsocial.com/facebook_album/album_photos/120839114616379" width="900" height="1500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Chiringuito Playa Alta Photo Gallery"></iframe>
+							</div>
+						</section>
+					</main>
 				</div>
 			</div>
 		</div>
